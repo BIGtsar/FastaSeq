@@ -53,10 +53,10 @@ else:
 ```text
 FastaReader/
 ├── fasta_reader.py  # Основной класс для чтения FASTA
-├── seq.py           # Класс для работы с последовательностями
-├── main.py          # Пример использования
+├── seq.py           # Класс для работы с последовательностью нуклеотидов
+├── main.py          # Пример использования программы
 ├── docs/            # Документация
-├── tests/           # Тесты
+├── tests/           # Тесты последовательностей
 └── examples/        # Примеры файлов
 ```
 
@@ -82,19 +82,3 @@ sphinx-build -b html source build
 
 ## Лицензия
 Этот проект распространяется под лицензией MIT. См. файл `LICENSE` для подробностей.
-
-## Вклад в проект
-1. Форкните репозиторий
-2. Создайте ветку для новой функциональности (`git checkout -b feature/amazing-feature`)
-3. Закоммитьте изменения (`git commit -m 'Add some amazing feature'`)
-4. Запушьте в ветку (`git push origin feature/amazing-feature`)
-5. Создайте Pull Request
-
-
-### `requirements.txt`
-```text
-# Для основных функций зависимости не требуются
-# Для разработки и документации:
-sphinx>=4.0.0
-sphinx-rtd-theme>=1.0.0
-pytest>=6.0.0
