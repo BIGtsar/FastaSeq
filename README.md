@@ -14,8 +14,8 @@ Python библиотека для чтения и анализа файлов �
 ```bash
 
 # Клонируйте репозиторий
-git clone https://github.com/Seitsan/FastaReader.git
-cd FastaReader
+git clone https://github.com/BIGtsar/FastaSeq.git
+cd FastaSeq
 ```
 
 ## Быстрый старт
