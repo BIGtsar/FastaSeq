@@ -59,8 +59,13 @@ FastaReader/
 └── examples/        # Примеры файлов```
 
 
-## Разработка
+### Сборка документации
 
+```bash
+
+cd docs
+sphinx-build -b html source build   #Лучше использовать для Windows
+```
 ### Запуск тестов
 
 ```bash
