@@ -6,12 +6,7 @@ class FastaReader:
     """
         Класс для чтения и обработки файлов в формате FASTA.
 
-        Attributes
-        ----------
-        path_to_fasta : str
-            Путь к FASTA файлу
-
-        Methods
+        МЕТОДЫ
         -------
         is_fasta()
             Проверяет, является ли файл корректным FASTA файлом
@@ -23,10 +18,7 @@ class FastaReader:
     def __init__(self, path_to_fasta):
 
         """
-        Parameters
-        ----------
-        path_to_fasta : str
-            Путь к FASTA файлу для чтения
+     ПАРАМЕТРЫ
         """
 
         self.path_to_fasta = path_to_fasta
@@ -37,16 +29,6 @@ class FastaReader:
         """
         Проверяет соответствие файла формату FASTA по расширению и содержимому.
 
-        Returns
-        -------
-        bool
-            True если файл соответствует формату FASTA, иначе False
-
-        Examples
-        --------
-        >>> reader = FastaReader("example.fna")
-        >>> reader.is_fasta()
-        True
         """
 
         valid_extensions = ('.fasta', '.fna', '.fa', '.faa', '.ffn', '.frn')
@@ -69,21 +51,6 @@ class FastaReader:
         """
         Читает FASTA файл построчно и возвращает объекты Seq.
 
-        Yields
-        ------
-        Seq
-            Объекты последовательности из FASTA файла
-
-        Raises
-        ------
-        ValueError
-            Если файл не является корректным FASTA файлом
-
-        Examples
-        --------
-        >>> reader = FastaReader("example.fna")
-        >>> for record in reader.read_records():
-        ...     print(record)
         """
 
         if not self.is_fasta():
