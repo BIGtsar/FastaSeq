@@ -12,7 +12,7 @@ class FastaReader:
             Проверяет, является ли файл правильным FASTA файлом
 
         read_records()
-            Читает все записи из FASTA файла и возвращает генератор объектов Seq
+            Читает все записи из FASTA файла
         """
 
     def __init__(self, path_to_fasta):
