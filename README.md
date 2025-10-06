@@ -1,4 +1,4 @@
-# FastaReader
+# FastaSeq
 
 Python библиотека для чтения и анализа файлов в формате FASTA.
 
